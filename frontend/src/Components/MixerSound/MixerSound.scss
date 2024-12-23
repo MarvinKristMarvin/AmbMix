@@ -1,0 +1,69 @@
+.mixerSound {
+  min-width: 9rem;
+  width: 9rem;
+  min-height: 27rem;
+  background-color: #303030;
+  margin: 0.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+  .image-div {
+    max-height: 7.25rem;
+
+    display: flex;
+    justify-content: center;
+    img {
+      max-height: 100%;
+      object-fit: contain;
+    }
+  }
+  .sound-name {
+    text-align: center;
+    padding-block: 0.5rem;
+    color: white;
+    background-color: rgb(15, 15, 15);
+    font-size: 0.75rem;
+  }
+  .sound-options {
+    > * {
+      text-transform: uppercase;
+      display: flex;
+      color: white;
+      justify-content: space-evenly;
+      padding-top: 0.5rem;
+      font-size: 0.75rem;
+      .option-acronym {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+      }
+      .button-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+      }
+      .slider-container {
+        width: 50%;
+        .option-slider {
+          width: 100%;
+          appearance: none;
+          border-radius: 0.5rem;
+          background-color: #181818; /* Grey background */
+          outline: none; /* Remove outline */
+          -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
+          transition: opacity 0.2s;
+
+          &::-webkit-slider-thumb {
+            appearance: none;
+            width: 0.75rem;
+            height: 0.75rem;
+            border-radius: 50%;
+            background: #04aa6d;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

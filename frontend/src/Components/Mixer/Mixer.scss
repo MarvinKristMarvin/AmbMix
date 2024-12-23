@@ -1,0 +1,12 @@
+.mixer {
+  height: 100%;
+
+  .mixerContainer {
+    max-height: calc(100vh - 3rem);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+  }
+}

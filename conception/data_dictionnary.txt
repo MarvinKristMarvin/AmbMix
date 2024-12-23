@@ -1,0 +1,32 @@
+
+DATA DICTIONNARY
+
+User Table:
+id INTEGER PK NOT NULL - User identifier.
+password TEXT NOT NULL - User's password.
+mail TEXT UNIQUE NOT NULL - User's registration email.
+name TEXT NOT NULL - User's name.
+age INTEGER NOT NULL - User's age.
+available BOOLEAN NOT NULL - Availability for recruitment.
+description TEXT NOT NULL - User's skillset description.
+portfolio_url TEXT - URL to the user's portfolio.
+profile_mail TEXT NOT NULL - Contact email address.
+created_at DATE NOT NULL - Profile creation date.
+updated_at DATE - Profile modification date.
+role ENTITY NOT NULL - User's role (id_role).
+
+Role Table :
+id INTEGER PK NOT NULL - Role identifier.
+name TEXT NOT NULL - Role name.
+
+Job Table :
+id INTEGER PK NOT NULL - Job identifier.
+name TEXT NOT NULL - Job name.
+
+Language Table :
+id INTEGER PK NOT NULL - Language identifier.
+name TEXT NOT NULL - Language name.
+
+Remuneration Table :
+id INTEGER PK NOT NULL - Remuneration identifier.
+type TEXT NOT NULL - Type of remuneration.

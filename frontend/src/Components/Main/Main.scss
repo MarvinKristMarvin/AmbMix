@@ -1,0 +1,16 @@
+.main {
+  background-color: rgb(24, 24, 24);
+  overflow-x: scroll;
+  scrollbar-color: rgb(51, 51, 51) rgb(34, 34, 34);
+  position: relative;
+  .searchButton {
+    position: fixed;
+    top: 4rem;
+    left: 1rem;
+  }
+  .menuButton {
+    position: fixed;
+    top: 4rem;
+    right: 1rem;
+  }
+}

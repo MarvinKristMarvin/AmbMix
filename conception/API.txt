@@ -1,0 +1,10 @@
+
+API ROUTES
+
+GET /api/users/filtered?name=x&age=x,x&language=x,x&jobs=x,x&keywords=x,x&remuneration=x,x - Search profiles using filters
+GET /api/users/ - Retrieve all profiles
+PATCH /api/user/:id - Edit profile
+DELETE /api/user/:id - Delete profile
+POST /signup - Create a profile
+POST /login - Log in
+POST /logout - Log out

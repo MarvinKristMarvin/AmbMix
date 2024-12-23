@@ -1,0 +1,15 @@
+
+TASKS
+
+23/12/2024
+[x] conception files structure
+[x] wireframe
+[x] presentation
+[x] routes
+
+24/12/2024
+[ ] user stories
+[ ] use cases
+
+TODO
+[ ] some things

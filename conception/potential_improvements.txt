@@ -1,0 +1,9 @@
+
+POTENTIAL IMPROVEMENTS
+
+-> Direct chat within the application instead of email.
+-> Adding images to profiles.
+-> Access to a detailed profile view.
+-> The ability to create project presentations that users can swipe through and request to join.
+-> (Instead of emailing, this could become an invitation to participate in the project. If the profile accepts, participants could then chat within the project).
+-> Adding a premium subscription system (e.g., for greater visibility).

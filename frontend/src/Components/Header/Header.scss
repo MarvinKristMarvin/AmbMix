@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arizonia&family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sunshiney&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Stalemate&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mrs+Sheppards&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Princess+Sofia&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Butterfly+Kids&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Qwigley&display=swap");
+.header {
+  background-color: #2e2e2e;
+  background-color: rgb(34, 34, 34);
+
+  padding: 2rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & ul {
+    display: flex;
+    align-items: center;
+  }
+
+  & a {
+    text-decoration: none;
+    color: #a0a0a0;
+    margin-left: 1rem;
+    font-weight: 700;
+
+    &:hover {
+      text-decoration: underline;
+    }
+    &.title {
+      margin-left: 0rem;
+      text-decoration: none;
+      font-family: "Sacramento", serif;
+      font-family: "Arizonia", serif;
+      font-family: "Niconne", serif;
+      font-weight: 500;
+      font-size: 2rem;
+      color: #00ccff;
+    }
+  }
+}

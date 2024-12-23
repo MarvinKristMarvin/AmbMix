@@ -1,0 +1,4 @@
+
+MINIMUM VIABLE PRODUCT
+
+Enable users to find profiles matching the needs of their video game project, particularly using search filters.
