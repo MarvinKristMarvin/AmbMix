@@ -1,32 +1,77 @@
 
 DATA DICTIONNARY
 
-User Table:
-id INTEGER PK NOT NULL - User identifier.
-password TEXT NOT NULL - User's password.
-mail TEXT UNIQUE NOT NULL - User's registration email.
-name TEXT NOT NULL - User's name.
-age INTEGER NOT NULL - User's age.
-available BOOLEAN NOT NULL - Availability for recruitment.
-description TEXT NOT NULL - User's skillset description.
-portfolio_url TEXT - URL to the user's portfolio.
-profile_mail TEXT NOT NULL - Contact email address.
-created_at DATE NOT NULL - Profile creation date.
-updated_at DATE - Profile modification date.
-role ENTITY NOT NULL - User's role (id_role).
+Users :
+id - INT PK NOT NULL
+password - TEXT NOT NULL
+mail - TEXT UNIQUE NOT NULL (Registration email)
+pseudo - TEXT (Pseudo displayed to other users)
+settings_theme - TEXT (App theme)
+settings_volume - INT (App global volume)
+created_at - DATE NOT NULL
+updated_at - DATE
+favorite_sounds - ASSOCIATION (Users_Sounds)
+favorite_ambiances - ASSOCIATION (Users_Ambiances)
 
-Role Table :
-id INTEGER PK NOT NULL - Role identifier.
-name TEXT NOT NULL - Role name.
+Sounds :
+id - INT PK NOT NULL
+name - TEXT UNIQUE NOT NULL (Displayed name)
+audio_paths - TEXT[] NOT NULL (Audio paths for a sound, a sound can play a random audio from these paths)
+image_path - TEXT NOT NULL
+looping - BOOLEAN NOT NULL (Make a sound loop)
+volume - INT[] NOT NULL (Set minimum and maximum volume)
+reverb - INT[] NOT NULL (Set minimum and maximum reverb)
+direction - INT[] NOT NULL (Set left and right panning)
+repeat_delay - DECIMAL[] NOT NULL (Set minimum and maximum delay between played audios)
 
-Job Table :
-id INTEGER PK NOT NULL - Job identifier.
-name TEXT NOT NULL - Job name.
+Ambiances :
+id - INT PK NOT NULL
+name - TEXT NOT NULL
+is_section - BOOLEAN NOT NULL (Tells if the ambiance is an ambiance section)
+section_duration - INT[] (Duration of the ambiance section)
+transition_duration - INT (Time for which the settings of each sound changes from past values to new values)
+author_id - TEXT NOT NULL (The user who created the ambiance)
+likes - INT (Appreciation received from the users)
+youtube_links - TEXT[] (Youtube videos used in the ambiance)
+sound_settings - JSONB (Settings for each sound of the ambiance or section)
+sections - ASSOCIATION (Table Sections)
+used_sounds - ASSOCIATION (Table Ambiances_Sounds)
 
-Language Table :
-id INTEGER PK NOT NULL - Language identifier.
-name TEXT NOT NULL - Language name.
+Plans :
+id - INT PK NOT NULL
+name - TEXT NOT NULL (Free, premium, enterprise)
+price - DECIMAL NOT NULL
+description - TEXT
 
-Remuneration Table :
-id INTEGER PK NOT NULL - Remuneration identifier.
-type TEXT NOT NULL - Type of remuneration.
+Subscriptions :
+id - INT PK NOT NULL
+user_id - INT FK NOT NULL (User that subscribed to the plan)
+plan_id - INT FK NOT NULL (Which plan has been chosen)
+starting_date - DATE NOT NULL (Starting date of the subscription)
+ending_date - DATE NOT NULL (Ending date of the subscription)
+payment_date - DATE NOT NULL (Date of payment reception)
+created_at - DATE NOT NULL
+status - ENUM(TEXT) (Status of the subscription, like active, concelled or expired)
+
+Sections :
+id - INT PK NOT NULL
+parent_ambiance_id - INT FK NOT NULL (Plays one by one all the sections)
+section_ambiance_id - INT FK NOT NULL (Part of the parent ambience)
+order - INT (Order in which the section ambiance will be played in the parent ambiance)
+
+Ambiances_Sounds
+id - INT PK NOT NULL
+ambiance_id - INT FK NOT NULL
+sound_id - INT FK NOT NULL
+
+Users_Sounds :
+id - INT PK NOT NULL
+user_id - INT FK NOT NULL
+sound_id - INT FK NOT NULL
+
+Users_Ambiances :
+id - INT PK NOT NULL
+user_id - INT FK NOT NULL
+ambiance_id - INT FK NOT NULL
+
+
