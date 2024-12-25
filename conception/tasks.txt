@@ -19,12 +19,14 @@ TASKS
 [-] technologies
 [x] specifications and requirements
 [x] update data dictionnary
-
 [x] MCD Merise
-[] ERD
+[x] use cases
+[-] ERD
+
+26/12/2024
 [] mockup
-[] use cases
 [] API routes
+[] finish ERD
 
 TODO
 [ ] task

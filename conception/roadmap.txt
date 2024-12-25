@@ -2,12 +2,12 @@
 ROADMAP
 
 [x] create the repository and link it to GitHub  
-[ ] conception   
+[-] conception   
    [x] user stories  
-   [ ] use cases  
+   [x] use cases  
    [x] wireframe
    [ ] mockup
-   [ ] ERD (Entity-Relationship Diagram)  
+   [-] ERD (Entity-Relationship Diagram)  
    [x] MCD (Conceptual Data Model) 
    [x] project presentation (description, objectives, target audience)  
    [x] minimum viable product  
@@ -17,11 +17,10 @@ ROADMAP
    [ ] API routes  
    [-] style guide  
    [x] data dictionary  
-   [ ] other specifications  
-[ ] prepare the working environment  
-[ ] create basic HTML and CSS  
+   [x] other specifications  
+[ ] prepare the working environment   
 [ ] create the database and testing scripts (create, insert, drop)  
-[ ] develop the responsive MVP (1)  
+[ ] develop the MVP
 [ ] secure authentication and common vulnerabilities  
 [ ] cost reduction: image optimization, file minification, query optimization  
 [ ] test the main features of the project  

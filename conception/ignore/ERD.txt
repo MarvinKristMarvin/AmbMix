@@ -1,0 +1,54 @@
+// Use DBML to define your database structure
+// Docs: https://dbml.dbdiagram.io/docs
+
+Table Users {
+  id integer [pk]
+  password text [not null]
+  email text [not null, unique]
+  pseudo text
+  settings_theme text
+  settings_volume int
+  created_at timestamp [not null]
+  updated_at timestamp
+}
+
+Table Sounds  {
+  id integer [pk]
+  name text [not null, unique]
+  audio_paths text[] [not null]
+  image_path text
+  looping boolean
+  volume int
+  reverb int
+  direction int
+  repeat_delay decimal[] [not null]
+  category text
+}
+
+Table Ambiances {
+  id integer [pk]
+  name text [not null, unique]
+  author_id int
+  likes int
+  data jsonb
+  total_duration int
+  sections int
+}
+
+Table Users_Sounds {
+  id integer [pk]
+  user_id integer
+  sound_id integer
+}
+
+Table Users_Ambiances {
+  id integer [pk]
+  user_id integer
+  ambiance_id integer
+}
+
+Ref: Users.id > Users_Sounds.user_id
+Ref: Sounds.id > Users_Sounds.sound_id 
+
+Ref: Users.id > Users_Ambiances.user_id
+Ref: Ambiances.id > Users_Ambiances.ambiance_id 
