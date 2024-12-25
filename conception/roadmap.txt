@@ -3,24 +3,20 @@ ROADMAP
 
 [x] create the repository and link it to GitHub  
 [ ] conception   
-   [ ] user stories  
+   [x] user stories  
    [ ] use cases  
    [x] wireframe
    [ ] mockup
    [ ] ERD (Entity-Relationship Diagram)  
-   [ ] MCD (Conceptual Data Model)
-   [ ] site map  
-   [x] project presentation  
-   [x] needs and objectives  
-   [x] target audience  
-   [ ] minimum viable product  
-   [ ] potential future improvements  
+   [ ] MCD (Conceptual Data Model) 
+   [x] project presentation (description, objectives, target audience)  
+   [x] minimum viable product  
+   [-] potential future improvements  
    [-] used technologies  
    [x] routes
    [ ] API routes  
-   [ ] style guide  
-   [ ] data collection  
-   [ ] data dictionary  
+   [-] style guide  
+   [x] data dictionary  
    [ ] other specifications  
 [ ] prepare the working environment  
 [ ] create basic HTML and CSS  

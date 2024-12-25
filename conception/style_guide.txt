@@ -1,7 +1,6 @@
 
 STYLE GUIDE
 
-Description - The application should evoke the video game industry -> contrasting colors, primarily dark theme. Very clean and intuitive interface.
-Colors - Red #F1005C, Violet #BB0072, Yellow #FFD840, Orange #FF9900, Blackish Red #0A0808.
-Fonts - Noto Sans.
-Flags - https://flagpedia.net/download/icons.
+Description - The application should evoke the modern music industry -> dark theme first. Very minimalistic and intuitive interface.
+Colors - Dark theme, with some colors for the sliders, logo and premium features
+Fonts - ?

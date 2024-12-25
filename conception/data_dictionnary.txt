@@ -23,18 +23,16 @@ volume - INT[] NOT NULL (Set minimum and maximum volume)
 reverb - INT[] NOT NULL (Set minimum and maximum reverb)
 direction - INT[] NOT NULL (Set left and right panning)
 repeat_delay - DECIMAL[] NOT NULL (Set minimum and maximum delay between played audios)
+category - TEXT (Vegetation, animals, insects, human, objects etc)
 
 Ambiances :
 id - INT PK NOT NULL
 name - TEXT NOT NULL
-is_section - BOOLEAN NOT NULL (Tells if the ambiance is an ambiance section)
-section_duration - INT[] (Duration of the ambiance section)
-transition_duration - INT (Time for which the settings of each sound changes from past values to new values)
 author_id - TEXT NOT NULL (The user who created the ambiance)
-likes - INT (Appreciation received from the users)
-youtube_links - TEXT[] (Youtube videos used in the ambiance)
-sound_settings - JSONB (Settings for each sound of the ambiance or section)
-sections - ASSOCIATION (Table Sections)
+likes - INT (How many times the ambiance has been added to favorites)
+data - JSONB (Settings of each section and sound of the ambiance)
+total_duration - INT (Sum of the duration of each section)
+sections - INT (Number of sections)
 used_sounds - ASSOCIATION (Table Ambiances_Sounds)
 
 Plans :
@@ -52,12 +50,6 @@ ending_date - DATE NOT NULL (Ending date of the subscription)
 payment_date - DATE NOT NULL (Date of payment reception)
 created_at - DATE NOT NULL
 status - ENUM(TEXT) (Status of the subscription, like active, concelled or expired)
-
-Sections :
-id - INT PK NOT NULL
-parent_ambiance_id - INT FK NOT NULL (Plays one by one all the sections)
-section_ambiance_id - INT FK NOT NULL (Part of the parent ambience)
-order - INT (Order in which the section ambiance will be played in the parent ambiance)
 
 Ambiances_Sounds
 id - INT PK NOT NULL

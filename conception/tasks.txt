@@ -8,8 +8,22 @@ TASKS
 [x] routes
 
 24/12/2024
-[ ] user stories
-[ ] use cases
+[x] user stories
+[x] data dictionnary
+[x] routes
+
+25/12/2024
+[x] MVP
+
+[-] style guide
+[-] potential improvements
+[-] technologies
+[] specifications and requirements
+[] MCD Merise
+[] ERD
+[] mockup
+[] use cases
+[] API routes
 
 TODO
-[ ] some things
+[ ] task
