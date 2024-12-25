@@ -14,12 +14,13 @@ TASKS
 
 25/12/2024
 [x] MVP
-
 [-] style guide
 [-] potential improvements
 [-] technologies
-[] specifications and requirements
-[] MCD Merise
+[x] specifications and requirements
+[x] update data dictionnary
+
+[x] MCD Merise
 [] ERD
 [] mockup
 [] use cases

@@ -8,7 +8,7 @@ ROADMAP
    [x] wireframe
    [ ] mockup
    [ ] ERD (Entity-Relationship Diagram)  
-   [ ] MCD (Conceptual Data Model) 
+   [x] MCD (Conceptual Data Model) 
    [x] project presentation (description, objectives, target audience)  
    [x] minimum viable product  
    [-] potential future improvements  
