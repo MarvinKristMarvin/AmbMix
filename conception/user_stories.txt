@@ -4,7 +4,7 @@ USER STORIES (MVP)
 As a visitor, I want to :
 -> open search menu
 -> search for specific sounds (by search string)
--> sea the results of the search (number of sounds found, display sounds components)
+-> see the results of the search (number of sounds found, display sounds components)
 -> listen a preview of a searched sound
 -> load a searched sound into the current ambiance
 -> search for saved ambiance
