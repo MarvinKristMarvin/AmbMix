@@ -27,9 +27,10 @@ TASKS
 - modify MCD
 - modify ERD
 - modify data dictionnary
-
-- mockup
 - API routes
 
+- mockup
+
+
 TODO
-- task
+- database creation

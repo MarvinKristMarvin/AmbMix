@@ -7,14 +7,14 @@ ROADMAP
    [x] use cases  
    [x] wireframe
    [ ] mockup
-   [-] ERD (Entity-Relationship Diagram)  
+   [x] ERD (Entity-Relationship Diagram)  
    [x] MCD (Conceptual Data Model) 
    [x] project presentation (description, objectives, target audience)  
    [x] minimum viable product  
    [-] potential future improvements  
    [-] used technologies  
    [x] routes
-   [ ] API routes  
+   [x] API routes  
    [-] style guide  
    [x] data dictionary  
    [x] other specifications  

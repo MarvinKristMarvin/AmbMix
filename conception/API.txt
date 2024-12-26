@@ -1,10 +1,17 @@
 
 API ROUTES
 
-GET /api/users/filtered?name=x&age=x,x&language=x,x&jobs=x,x&keywords=x,x&remuneration=x,x - Search profiles using filters
-GET /api/users/ - Retrieve all profiles
-PATCH /api/user/:id - Edit profile
-DELETE /api/user/:id - Delete profile
-POST /signup - Create a profile
-POST /login - Log in
-POST /logout - Log out
+GET /search?type=x&category=x&themes=x,x&string=x - get filtered sounds or ambiances for search results
+GET /sound/:id - load the full sound in the ambiance
+GET /ambiance/:id - load the ambiance with all sounds associated to it
+
+POST /signup - account creation
+POST /login - user connection
+POST /logout - user disconnection
+POST /subscribe - user subscription to premium
+POST /ambiance - save ambiance in database
+
+PATCH /user - update user informations
+PATCH /ambiance - update an existing ambiance
+
+DELETE /user - delete user

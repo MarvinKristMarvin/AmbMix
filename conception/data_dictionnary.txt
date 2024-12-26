@@ -43,7 +43,7 @@ description - TEXT
 
 Subscriptions :
 id - INT PK NOT NULL
-user_id - INT FK NOT NULL (User that subscribed to the plan)
+user_id - INT FK (User that subscribed to the plan, can be null if a user deletes his account)
 plan_id - INT FK NOT NULL (Which plan has been chosen)
 starting_date - DATE (Starting date of the subscription)
 ending_date - DATE (Ending date of the subscription)
