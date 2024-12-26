@@ -2,31 +2,34 @@
 TASKS
 
 23/12/2024
-[x] conception files structure
-[x] wireframe
-[x] presentation
-[x] routes
+- conception files structure
+- wireframe
+- presentation
+- routes
 
 24/12/2024
-[x] user stories
-[x] data dictionnary
-[x] routes
+- user stories
+- data dictionnary
+- routes
 
 25/12/2024
-[x] MVP
-[-] style guide
-[-] potential improvements
-[-] technologies
-[x] specifications and requirements
-[x] update data dictionnary
-[x] MCD Merise
-[x] use cases
-[-] ERD
+- MVP
+- begin style guide
+- begin potential improvements
+- begin technologies
+- specifications and requirements
+- update data dictionnary
+- MCD Merise
+- use cases
+- begin ERD
 
 26/12/2024
-[] mockup
-[] API routes
-[] finish ERD
+- modify MCD
+- modify ERD
+- modify data dictionnary
+
+- mockup
+- API routes
 
 TODO
-[ ] task
+- task

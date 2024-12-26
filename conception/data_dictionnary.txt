@@ -3,15 +3,15 @@ DATA DICTIONNARY
 
 Users :
 id - INT PK NOT NULL
-password - TEXT NOT NULL
+hashed_password - TEXT NOT NULL
 email - TEXT UNIQUE NOT NULL (Registration email)
 pseudo - TEXT (Pseudo displayed to other users)
-settings_theme - TEXT (App theme)
-settings_volume - INT (App global volume)
+settings - JSONB (App global volume, theme and more)
 created_at - TIMESTAMP NOT NULL
 updated_at - TIMESTAMP
-favorite_sounds - ASSOCIATION (Users_Sounds)
-favorite_ambiances - ASSOCIATION (Users_Ambiances)
++ favorite_sounds - ASSOCIATION (Table Users_Sounds)
++ favorite_ambiances - ASSOCIATION (Table Users_Ambiances)
++ subscriptions - ASSOCIATION (Table Subscriptions)
 
 Sounds :
 id - INT PK NOT NULL
@@ -23,17 +23,17 @@ volume - INT (Set volume)
 reverb - INT (Set reverb)
 direction - INT (Set left and right panning)
 repeat_delay - DECIMAL[] NOT NULL (Set minimum and maximum delay between played audios, minimum should always be sound duration)
-category - TEXT (Vegetation, animals, insects, human, objects etc)
+category - ENUM(TEXT) (Vegetation, animals, insects, human, objects etc)
 
 Ambiances :
 id - INT PK NOT NULL
 name - TEXT NOT NULL
 author_id - INT (The user who created the ambiance)
 likes - INT (How many times the ambiance has been added to favorites)
-data - JSONB (Settings of each section and sound of the ambiance)
+settings - JSONB (Settings of each section and sound of the ambiance)
 total_duration - INT (Sum of the duration of each section)
 sections - INT (Number of sections)
-used_sounds - ASSOCIATION (Table Ambiances_Sounds)
++ used_sounds - ASSOCIATION (Table Ambiances_Sounds)
 
 Plans :
 id - INT PK NOT NULL
@@ -47,9 +47,10 @@ user_id - INT FK NOT NULL (User that subscribed to the plan)
 plan_id - INT FK NOT NULL (Which plan has been chosen)
 starting_date - DATE (Starting date of the subscription)
 ending_date - DATE (Ending date of the subscription)
-paid_at - TIMESTAMP (Date of payment reception)
 created_at - TIMESTAMP NOT NULL
-status - TEXT (Status of the subscription, like active, concelled or expired)
+paid_at - TIMESTAMP (Date of payment reception)
+payment_method - TEXT
+status - ENUM(TEXT) (Status of the subscription, like active, concelled or expired)
 
 Ambiances_Sounds
 id - INT PK NOT NULL
