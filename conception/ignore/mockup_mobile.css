@@ -65,9 +65,10 @@ body {
 }
 
 .main_header nav a div h1 {
-  color: #00ffc8;
-  font-size: 3rem;
+  color: #838383;
+  font-size: 2.2rem;
   margin-left: 0.5rem;
+  transform: translateY(3px);
   /*font-family: "Princess Sofia", serif;*/
   /*font-family: "Sue Ellen Francisco", serif;*/
   font-family: "Mansalva", serif;
@@ -112,19 +113,17 @@ main {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding-inline: 1rem;
-  gap: 1rem;
+  gap: 0rem;
   background-color: rgb(17, 16, 22);
   flex-grow: 1;
   height: 100%;
-  padding-bottom: 1rem;
 }
 
 .sound {
-  width: 10rem;
-  background-color: rgb(34, 34, 34);
-  border-radius: 0.5rem;
+  width: 100%;
+  background-color: rgb(28, 31, 39);
   padding: 1rem;
+  padding-bottom: 0;
   display: flex;
   flex-direction: column;
 }
@@ -138,20 +137,20 @@ main {
   width: 100%;
   height: 5.5rem;
   object-fit: cover;
-
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+  object-position: 50% 15%; /* Adjust horizontally and vertically */ /* Adjusts the visible area of the image */
 }
 
 .sound p {
   font-size: 0.75rem;
   font-weight: 600;
   color: #c4c4c4;
-  padding: 0.25rem;
+  padding: 0.5rem;
   text-align: center;
-  border-bottom-left-radius: 0.25rem;
-  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
 }
 
 .sound > p {
@@ -169,7 +168,7 @@ main {
 .sound_options .repeat {
   border-radius: 0.25rem;
   background-color: #965a00;
-  height: 1.25rem;
+  height: 1.5rem;
   position: relative;
   margin-top: 1rem;
 }
@@ -201,7 +200,7 @@ main {
   width: 50%;
   height: 100%;
   background-color: #ffd35c;
-  border-radius: 0.125rem;
+  border-radius: 0.25rem;
   border-top-right-radius: 0;
   border-top-right-radius: 0;
 }
@@ -212,7 +211,7 @@ main {
 }
 
 .sound_options .direction .fillbar {
-  width: 1.25rem;
+  width: 1.5rem;
   background-color: rgb(211, 211, 211);
   border-bottom: solid 2px rgb(143, 143, 143);
   border-radius: 0.25rem;
@@ -309,9 +308,6 @@ main {
 }
 
 /* Hover Effects */
-header nav a:hover div h1 {
-  color: #00e1ff;
-}
 
 .functionalities header p:hover {
   text-decoration: underline;
