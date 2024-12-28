@@ -1,48 +1,40 @@
-@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Arizonia&family=Sacramento&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mansalva&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Sunshiney&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Stalemate&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Mrs+Sheppards&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Princess+Sofia&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Butterfly+Kids&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Qwigley&display=swap");
-.header {
-  background-color: #2e2e2e;
-  background-color: rgb(34, 34, 34);
-
-  padding: 2rem;
-  font-size: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  & ul {
+header.Header {
+  background-color: rgb(33, 34, 44);
+  height: 7rem;
+  padding-inline: 1.5rem;
+  nav {
+    height: 100%;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
-  }
-
-  & a {
-    text-decoration: none;
-    color: #a0a0a0;
-    margin-left: 1rem;
-    font-weight: 700;
-
-    &:hover {
-      text-decoration: underline;
-    }
-    &.title {
-      margin-left: 0rem;
+    a {
       text-decoration: none;
-      font-family: "Sacramento", serif;
-      font-family: "Arizonia", serif;
-      font-family: "Niconne", serif;
-      font-weight: 500;
-      font-size: 2rem;
-      color: #00ccff;
+
+      div {
+        height: 2rem;
+        h1 {
+          color: #23ffa4;
+          font-family: "Mansalva", serif;
+          font-size: 3.5rem;
+          transform: translateY(-16px);
+          margin-left: 1rem;
+        }
+        img {
+          height: 100%;
+          margin-right: 1rem;
+          filter: brightness(0) saturate(100%) invert(62%) sepia(0%)
+            saturate(259%) hue-rotate(179deg) brightness(83%) contrast(87%);
+          &.selected {
+            filter: brightness(0) saturate(100%) invert(89%) sepia(47%)
+              saturate(822%) hue-rotate(74deg) brightness(105%) contrast(100%);
+          }
+        }
+      }
+      &:first-child {
+        margin-right: auto;
+      }
     }
   }
 }

@@ -1,33 +1,37 @@
-import React from "react";
 import "./Header.scss";
-// Define the props interface
-interface HeaderInterface {
-  title: string; // Title of the header
-}
 
-// Functional component
-const Header = ({ title }: HeaderInterface) => {
+export default function Header() {
   return (
-    <header className="header">
-      <div>
-        <a className="title" href="">
-          {title}
-        </a>
-      </div>
-      <div className="headerMenu">
-        <ul>
-          <li>
-            <a href="">Tutorial</a>
-          </li>
-          <li>
-            <a href="">Connection</a>
-          </li>
-        </ul>
-      </div>
-    </header>
+    <>
+      <header className="Header">
+        <nav>
+          <a href="">
+            <div>
+              <h1>Froggus</h1>
+            </div>
+          </a>
+          <a href="">
+            <div>
+              <img src="icons/person-fill.webp" alt="" className="selected" />
+            </div>
+          </a>
+          <a href="">
+            <div>
+              <img src="icons/alarm-bold.webp" alt="" />
+            </div>
+          </a>
+          <a href="">
+            <div>
+              <img src="icons/search.webp" alt="" />
+            </div>
+          </a>
+          <a href="">
+            <div>
+              <img src="icons/hamburger_icon.webp" alt="" />
+            </div>
+          </a>
+        </nav>
+      </header>
+    </>
   );
-};
-
-// Define styles as an example
-
-export default Header;
+}

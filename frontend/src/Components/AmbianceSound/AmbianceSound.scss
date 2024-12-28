@@ -1,0 +1,17 @@
+.slider-container {
+  position: relative;
+  width: 300px;
+
+  .slider {
+    width: 100%;
+  }
+
+  .slider-label {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    transform: translateX(-50%);
+    transform: translateY(1.5rem);
+    pointer-events: none;
+  }
+}

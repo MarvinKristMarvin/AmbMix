@@ -7,41 +7,29 @@ $main-font: "Poppins", sans-serif;
 }
 
 #root {
+  color: white;
   height: 100vh;
   font-family: $main-font;
   display: flex;
   flex-direction: column;
   background-color: rgb(24, 24, 24);
 
-  .searchInfos {
-    flex: 1;
-  }
-
-  .app {
+  .App {
+    height: 100%;
     display: flex;
-    flex: 1;
-
-    .main {
-      flex: 1;
+    flex-direction: column;
+    .Header {
+    }
+    main {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      .AmbianceHeader {
+      }
+      .AmbianceSounds {
+      }
+    }
+    aside {
     }
   }
-}
-
-@media (width <= 640px) {
-}
-
-@media (min-width: 640px) {
-  /* > 640 pixels */
-}
-
-@media (min-width: 960px) {
-}
-
-@media (min-width: 1280px) {
-}
-
-.svgcol {
-  /* grey */
-  filter: invert(53%) sepia(4%) saturate(0%) hue-rotate(31deg) brightness(100%)
-    contrast(89%);
 }
