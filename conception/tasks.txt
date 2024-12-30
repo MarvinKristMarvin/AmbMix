@@ -29,8 +29,18 @@ TASKS
 - modify data dictionnary
 - API routes
 
+27/12/2024
 - mockup
 
+28/12/2024
+- delete old react code, components and css
+
+- chopper les couleurs du mockup elles sont mieux (titre et backgrounds)
+~ static react front
+- choose the less react states possible
+
+29/12/2024
 
 TODO
 - database creation
+- set up auto npm run dev back and front and launch database on vscode launch

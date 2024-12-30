@@ -1,0 +1,53 @@
+.ProfileMenu {
+  width: 20rem;
+  background-color: rgb(29, 29, 31);
+  height: 100%;
+
+  div {
+    display: flex;
+    padding: 1rem;
+    padding-bottom: 0;
+
+    p {
+      font-weight: 600;
+      &:last-child {
+        color: rgb(165, 165, 165);
+        margin-left: 0.5rem;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  form {
+    padding-inline: 1rem;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    input {
+      margin-bottom: 1rem;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 0.25rem;
+      background-color: rgb(22, 22, 24);
+      color: aqua;
+      font-weight: 600;
+    }
+
+    button {
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+      cursor: pointer;
+      background-color: rgb(33, 255, 200);
+      border: none;
+      border-bottom: solid 4px rgb(0, 206, 154);
+      border-radius: 0.25rem;
+      font-weight: 600;
+      box-sizing: content-box;
+      &:hover {
+        border-bottom: solid 3px rgb(0, 206, 154);
+        margin-top: 1px;
+      }
+    }
+  }
+}

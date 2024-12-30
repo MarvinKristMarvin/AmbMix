@@ -23,13 +23,19 @@ $main-font: "Poppins", sans-serif;
     main {
       flex-grow: 1;
       display: flex;
-      flex-direction: column;
-      .AmbianceHeader {
+      .mainDiv {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        .AmbianceHeader {
+        }
+        .AmbianceSounds {
+        }
       }
-      .AmbianceSounds {
+      aside {
+        .ProfileMenu {
+        }
       }
-    }
-    aside {
     }
   }
 }
