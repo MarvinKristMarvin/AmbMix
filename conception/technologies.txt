@@ -11,4 +11,3 @@ TypeScript - Improves reliability with typing, simplifies code maintenance, and 
 Tone.js - Audio library that simplifies audio gestion
 Bcrypt - Crypts passwords
 CORS - Authorizes specific URLs to access the backend.
-OAuth ? - Simplifies authentication
